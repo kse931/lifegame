@@ -5,6 +5,5 @@ public class Game {
         Window window = new Window();
         javax.swing.SwingUtilities.invokeLater(window);
         //ne bipki
-
     }
 }

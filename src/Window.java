@@ -3,7 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-
 public class Window implements Runnable {
 
     JFrame frame;
@@ -20,11 +19,7 @@ public class Window implements Runnable {
 
     void initFrame() {
         frame = new JFrame();
-        frame.getContentPane().setLayout(new GridLayout(Config.WIDTH, Config.HEIGHT, 0, 0)); // Используем GridLayout
-        //frame.setSize(Config.SIZE * Config.WIDTH + frame.getInsets().left + frame.getInsets().right,
-        //    Config.SIZE * Config.HEIGHT + frame.getInsets().top + frame.getInsets().bottom);
-        //frame.setUndecorated(true); // Убирает заголовок и границы окна
-
+        frame.getContentPane().setLayout(new GridLayout(Config.WIDTH, Config.HEIGHT, 0, 0));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.setVisible(true);
